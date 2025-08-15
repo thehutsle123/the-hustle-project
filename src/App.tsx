@@ -1,14 +1,12 @@
-import { useState, Suspense } from 'react'
+import { Suspense } from 'react'
 import { useRoutes } from 'react-router'
 import './App.css'
 import Layout from './components/layout/Layout'
-import routes from '~pages'
+import routes from '~react-pages'
 import Error from './components/interactions/Error'
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <Suspense>
       {useRoutes([
